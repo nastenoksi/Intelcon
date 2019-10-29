@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+        <title>Be2Rent</title>
+    </head>
+    <svg style="display:none" width="64" height="64" viewBox="0 0 64 64">
+        <symbol id="clock">
+            <path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" d="M 32 64 C 49.6731 64 64 49.6731 64 32 C 64 14.3269 49.6731 0 32 0 C 14.3269 0 0 14.3269 0 32 C 0 49.6731 14.3269 64 32 64 Z M 31.767 11.8278 H 31.621 C 30.6482 11.8278 29.8699 12.6061 29.8699 13.579 V 32.6251 C 29.8699 33.4764 30.3076 34.279 31.0616 34.7168 L 40.8163 40.5696 C 40.8152 40.6048 40.8147 40.6401 40.8147 40.6755 C 40.8147 42.5785 42.3574 44.1211 44.2603 44.1211 C 46.1633 44.1211 47.7059 42.5785 47.7059 40.6755 C 47.7059 38.7725 46.1633 37.2299 44.2603 37.2299 C 43.6837 37.2299 43.1401 37.3716 42.6625 37.622 L 33.5181 32.1873 V 13.579 C 33.5181 12.6061 32.7398 11.8278 31.767 11.8278 Z" />
+        </symbol>
+        <symbol id="salary">
+            <path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" d="M 32 64 C 49.6731 64 64 49.6731 64 32 C 64 14.3269 49.6731 0 32 0 C 14.3269 0 0 14.3269 0 32 C 0 49.6731 14.3269 64 32 64 Z M 42.7932 21.2666 C 44.4412 20.3151 45.0059 18.2078 44.0544 16.5598 C 43.1029 14.9118 40.9956 14.3471 39.3476 15.2986 C 38.662 15.6944 38.164 16.2902 37.8845 16.9698 H 36.8754 H 20.4444 C 19.1371 16.9698 17.8833 17.4891 16.9589 18.4136 C 16.0345 19.338 15.5152 20.5918 15.5152 21.8991 V 41.6163 C 15.5152 42.9236 16.0345 44.1774 16.9589 45.1018 C 17.8833 46.0262 19.1371 46.5456 20.4444 46.5456 H 43.4478 C 44.7551 46.5456 46.0089 46.0262 46.9333 45.1018 C 47.8578 44.1774 48.3771 42.9236 48.3771 41.6163 V 28.4715 C 48.3771 27.1642 47.8578 25.9104 46.9333 24.986 C 46.0089 24.0615 44.7551 23.5422 43.4478 23.5422 H 41.8047 H 38.5185 H 20.4444 C 20.0087 23.5422 19.5907 23.3691 19.2826 23.0609 C 18.9745 22.7528 18.8013 22.3349 18.8013 21.8991 C 18.8013 21.4633 18.9745 21.0454 19.2826 20.7373 C 19.5907 20.4291 20.0087 20.256 20.4444 20.256 H 36.8754 H 38.2457 C 39.258 21.7085 41.2318 22.1681 42.7932 21.2666 Z M 45.1986 40.0909 V 39.2728 H 45.0909 H 43.6364 C 42.4791 39.2728 41.3692 38.813 40.5508 37.9947 C 39.7325 37.1763 39.2727 36.0664 39.2727 34.9091 C 39.2727 33.7518 39.7325 32.6419 40.5508 31.8236 C 41.3692 31.0052 42.4791 30.5455 43.6364 30.5455 H 45.0909 H 45.1986 V 30.2323 V 28.5892 C 45.1986 28.1534 45.0255 27.7355 44.7174 27.4273 C 44.4092 27.1192 43.9913 26.9461 43.5555 26.9461 H 20.5522 C 19.9926 26.9469 19.437 26.8524 18.9091 26.6667 V 41.734 C 18.9091 42.1697 19.0822 42.5877 19.3903 42.8958 C 19.6985 43.2039 20.1164 43.3771 20.5522 43.3771 H 43.5555 C 43.9913 43.3771 44.4092 43.2039 44.7174 42.8958 C 45.0255 42.5877 45.1986 42.1697 45.1986 41.734 V 40.0909 Z M 45.0909 36.3638 H 43.6364 C 43.2506 36.3638 42.8806 36.2105 42.6078 35.9377 C 42.3351 35.665 42.1818 35.295 42.1818 34.9092 C 42.1818 34.5234 42.3351 34.1535 42.6078 33.8807 C 42.8806 33.6079 43.2506 33.4547 43.6364 33.4547 H 45.0909 V 36.3638 Z" />
+        </symbol>
+        <symbol id="edu">
+            <path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" d="M 64 32 C 64 49.6731 49.6731 64 32 64 C 14.3269 64 0 49.6731 0 32 C 0 14.3269 14.3269 0 32 0 C 49.6731 0 64 14.3269 64 32 Z M 17.5 29.087 L 11.5217 26.5335 C 10.8268 26.2368 10.8259 25.4489 11.5201 25.1511 L 30.0759 17.1903 C 30.6669 16.9368 31.38 16.9365 31.9713 17.1897 L 50.4792 25.1138 C 51.0753 25.369 51.732 25.7077 51.732 26.3435 L 51.689 39.6345 C 52.1472 39.9189 52.5452 40.3154 52.8379 40.8124 C 53.8038 42.452 53.2575 44.5641 51.6179 45.53 C 49.9782 46.4958 47.8661 45.9496 46.9003 44.3099 C 45.9344 42.6703 46.4807 40.5581 48.1203 39.5923 C 48.1509 39.5743 48.1816 39.5569 48.2124 39.5399 L 48.3045 28.1645 C 48.3047 28.0603 48.3054 27.959 48.3065 27.8606 L 44.5 29.3974 V 36.5788 C 44.5 37.1721 44.1502 37.7097 43.6078 37.9501 L 31.6078 43.2683 C 31.2207 43.4399 30.7793 43.4399 30.3922 43.2683 L 18.3922 37.9501 C 17.8498 37.7097 17.5 37.1721 17.5 36.5788 V 29.087 Z M 41.5 30.6086 V 35.6029 L 31 40.2563 L 20.5 35.6029 V 30.3684 L 30.0749 34.4581 C 30.6666 34.7108 31.3797 34.71 31.9704 34.456 L 41.5 30.6086 Z M 19.5412 25.4201 C 19.1329 25.5987 19.1334 26.0715 19.5422 26.2495 L 30.4558 31.0043 C 30.8039 31.1559 31.2233 31.1554 31.5708 31.003 L 42.4593 26.2267 C 42.8669 26.0479 42.8664 25.5759 42.4584 25.3977 L 31.5714 20.6432 C 31.2235 20.4913 30.8041 20.4915 30.4564 20.6436 L 19.5412 25.4201 Z" />
+        </symbol>
+        <symbol id="comfort">
+            <path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" d="M 64 32 C 64 49.6731 49.6731 64 32 64 C 14.3269 64 0 49.6731 0 32 C 0 14.3269 14.3269 0 32 0 C 49.6731 0 64 14.3269 64 32 Z M 19.35 22.054 C 19.35 20.1874 20.8632 18.6743 22.7297 18.6743 H 44.3513 C 44.4252 18.6743 44.4979 18.6791 44.5693 18.6885 L 46.3074 18.6895 C 46.5994 18.1089 47.0585 17.6042 47.6634 17.2549 C 49.3136 16.3022 51.4235 16.8676 52.3762 18.5177 C 53.3289 20.1678 52.7636 22.2778 51.1134 23.2305 C 49.4754 24.1762 47.3842 23.626 46.4218 22.0038 L 41.0786 21.975 C 41.0538 21.9752 41.0292 21.975 41.0046 21.9743 H 22.7297 C 22.6857 21.9743 22.65 22.01 22.65 22.054 V 33.2972 C 22.65 35.2168 23.364 36.5283 24.4584 37.3981 C 25.6015 38.3066 27.3146 38.8501 29.446 38.8501 H 35.5 C 37.6337 38.8501 39.4715 38.3049 40.7311 37.3666 C 41.9381 36.4675 42.7013 35.1529 42.7013 33.2972 V 25.9299 C 42.7013 25.0186 43.4401 24.2799 44.3513 24.2799 C 45.2626 24.2799 46.0013 25.0186 46.0013 25.9299 V 33.2972 C 46.0013 36.2181 44.7271 38.5049 42.7026 40.013 C 40.7306 41.482 38.1428 42.1501 35.5 42.1501 H 29.446 C 26.8008 42.1501 24.2909 41.4803 22.4052 39.9815 C 20.4707 38.4441 19.35 36.1542 19.35 33.2972 V 22.054 Z M 24.2297 45.4055 C 23.4013 45.4055 22.7297 46.077 22.7297 46.9055 C 22.7297 47.7339 23.4013 48.4055 24.2297 48.4055 H 41.9865 C 42.8149 48.4055 43.4865 47.7339 43.4865 46.9055 C 43.4865 46.077 42.8149 45.4055 41.9865 45.4055 H 24.2297 Z" />
+        </symbol>
+    </svg>
+    <body>
+        <main class="page">
+            <header class="header">
+                <div class="head">
+                    <div class="head__content">
+                        <div class="logo">
+                            <img src="svg/logo.svg" alt="Logo_Intelcon">
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__item__link" href="#about">О компании</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item__link" href="#projects">Проекты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item__link" href="#technologies">Технологии</a>
+                                </li>
+                                 <li class="menu__item">
+                                    <a class="menu__item__link" href="#terms">Условия</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item__link" href="#contacts">Контакты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item__link call" href="">8-800-000-00-00</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="slider container owl-carousel owl-theme works-carousel">
+                <div class="banner2 item">
+                    <div class="decors">
+                        <div class="decor__banner">
+                            <div class="line"></div>
+                            <div class="circle__stroke"></div>
+                        </div>
+                        <div class="decor__banner second">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="decor__banner third">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="slider__title">
+                        <h1>IT-лаборатория</h1>
+                        <p class="subhead1">высоких компетенций</p>
+                    </div>
+                    <button class="type light">узнать больше</button>
+                </div>
+                <div class="banner item">
+                    <div class="decors">
+                        <div class="decor__banner">
+                            <div class="line"></div>
+                            <div class="circle__stroke"></div>
+                        </div>
+                        <div class="decor__banner second">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="decor__banner third">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="slider__title">
+                        <h1>IT-лаборатория</h1>
+                        <p class="subhead1">высоких компетенций</p>
+                    </div>
+                    <button class="type dark">узнать больше</button>
+                </div>
+            </div>
+            <section class="about container" id="about">
+                <div class="content">
+                    <div class="about__image"></div>
+                    <div class="about__text">
+                         <div class="decors">
+                            <div class="decor__about">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                         </div>
+                        <div class="decors second">
+                            <div class="decor__about second">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="decors__third">
+                            <div class="line"></div>
+                            <div class="circle__stroke"></div>
+                        </div>
+                        <h2>О компании</h2>
+                        <p class="text__main">
+                                ИнтелКон - амбициозный проект по разработке высокотехнологичных программных продуктов для лидера сектора, реализующего крупные и сложные инфраструктурные проекты по всей России (дороги, мосты, тоннели).
+                                <br>Мы входим в группу компаний «Континент» и имеем собственные знания в предметной области проектирования и реализации проектов транспортной инфраструктуры. 
+                        </p>
+                        <p class="text__main__bold">Присоединяйся к нам – и мы вместе поможем строительной отрасли России
+войти в будущее!
+                        </p>
+                        <button class="type light">Присоединиться</button>
+                    </div>
+                </div>
+            </section>
+            <section class="projects container" id="projects">
+                <div class="decors">
+                    <div class="decor__projects">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="decor__projects second">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <h2>наши проекты</h2>
+                <div class="project__cards">
+                    <div class="project__card">
+                        <div>
+                            <div class="logo__card filin"></div>
+                            <h4>Платформа внутрикорпоративного on-line обучения</h4>
+                            <p class="text__main description__project">Система интегрирует в себе автоматизацию бизнес-процессов корпоративного учебного центра и возможности обучения в электронном виде. Несколько способов определения учебных материалов. Гибкие возможности по тестированию и самостоятельной проверке степени усвоения материала.</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="project__card">
+                        <div>
+                            <div class="logo__card erp"></div>
+                            <h4>Автоматизированная система управления бизнес-процессами в строительной организации</h4>
+                            <p class="text__main description__project">Данный проект автоматизирует основной процесс крупного производственного предприятия, с учётом специфики строительной отрасли. В том числе системой осуществляется поддержка информационной модели BIM.</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="project__card">
+                        <div>
+                            <div class="logo__card int-home"></div>
+                            <h4>Многофункциональный он-лайн консьерж</h4>
+                            <p class="text__main description__project">Программно-аппаратный комплекс, позволяющий каждому жителю осуществлять повседневные действия, связанные с информационным обменом, из собственного дома.</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="technologies container" id="technologies">
+                 <div class="decors">
+                    <div class="decor__technologies">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="decor__technologies second">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="tech_content">
+                    <h2>Технологии</h2>
+                    <div class="cols">
+                        <div class="col col__left">
+                            <div class="technology">
+                                <div class="logo_technology atl-jira">
+                                </div>
+                                <div class="line-circle__animate">
+                                    <div class="line"></div>
+                                    <div class="circle-animate"></div>
+                                </div>
+                                <h4>Atlassian Jira</h4>
+                            </div>
+                            <div class="technology">
+                                <div class="logo_technology atl-conf">
+                                </div>
+                                <div class="line-circle__animate">
+                                    <div class="line"></div>
+                                    <div class="circle-animate"></div>
+                                </div>
+                                <h4>Atlassian Confluence</h4>
+                            </div>
+                            <div class="technology">
+                                <div class="logo_technology gitlab">
+                                </div>
+                                <div class="line-circle__animate">
+                                    <div class="line"></div>
+                                    <div class="circle-animate"></div>
+                                </div>
+                                <h4>GitLab</h4>
+                            </div>
+                            <div class="technology">
+                                <div class="logo_technology proget">
+                                </div>
+                                <div class="line-circle__animate">
+                                    <div class="line"></div>
+                                    <div class="circle-animate"></div>
+                                </div>
+                                <h4>ProGet</h4>
+                            </div>
+                        </div>
+                        <div class="col col__right">
+                            <div class="technology">
+                                <div class="logo_technology intel">
+                                </div>
+                                <div class="line-circle__animate">
+                                    <div class="line"></div>
+                                    <div class="circle-animate"></div>
+                                </div>
+                                <h4>Собственные компоненты по интеграции</h4>
+                            </div>
+                            <div class="technology">
+                                <div class="logo_technology asp">
+                                </div>
+                                <div class="line-circle__animate">
+                                    <div class="line"></div>
+                                    <div class="circle-animate"></div>
+                                </div>
+                                <h4>ASP.NET Core</h4>
+                            </div>
+                            <div class="technology">
+                                <div class="logo_technology react">
+                                </div>
+                                <div class="line-circle__animate">
+                                    <div class="line"></div>
+                                    <div class="circle-animate"></div>
+                                </div>
+                                <h4>ReactJS</h4>
+                            </div>
+                            <div class="technology">
+                                <div class="logo_technology c-plus">
+                                </div>
+                                <div class="line-circle__animate">
+                                    <div class="line"></div>
+                                    <div class="circle-animate"></div>
+                                </div>
+                                <h4>++C</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="terms container" id="terms">
+                <div class="decors">
+                    <div class="decor__terms">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="decor__terms second">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <h2>Условия работы</h2>
+                <div class="term__cards">
+                    <div class="term__card">
+                        <div class="front">
+                            <div class="icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64">
+                                    <use xlink:href="#clock"/>
+                                </svg>
+                            </div>
+                            <p class="text__main__bold">Гибкий график</p>
+                        </div>
+                        <div class="back">
+                             <div class="icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64">
+                                    <use xlink:href="#clock"/>
+                                </svg>
+                            </div>
+                            <p class="Text__main">Возможность удаленной работы в перспективе</p>
+                        </div>
+                    </div>
+                    <div class="term__card">
+                        <div class="front">
+                            <div class="icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64">
+                                    <use xlink:href="#salary"/>
+                                </svg>
+                            </div>
+                            <p class="text__main__bold">Высокий оклад</p>
+                        </div>
+                        <div class="back">
+                             <div class="icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64">
+                                    <use xlink:href="#salary"/>
+                                </svg>
+                            </div>
+                            <p class="Text__main">Стабильный высокий оклад с оформлением по ТК РФ. Медицинская страховка</p>
+                        </div>
+                    </div>
+                    <div class="term__card">
+                        <div class="front">
+                            <div class="icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64">
+                                    <use xlink:href="#edu"/>
+                                </svg>
+                            </div>
+                            <p class="text__main__bold">Обучение за счет компании</p>
+                        </div>
+                        <div class="back">
+                             <div class="icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64">
+                                    <use xlink:href="#edu"/>
+                                </svg>
+                            </div>
+                            <p class="Text__main">Мастер-классы, тренинги, выездные семинары.</p>
+                        </div>
+                    </div>
+                    <div class="term__card">
+                        <div class="front">
+                            <div class="icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64">
+                                    <use xlink:href="#comfort"/>
+                                </svg>
+                            </div>
+                            <p class="text__main__bold">Комфортный офис</p>
+                        </div>
+                        <div class="back">
+                             <div class="icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64">
+                                    <use xlink:href="#comfort"/>
+                                </svg>
+                            </div>
+                            <p class="Text__main">Офис в районе метро "Ботанический сад". Душ, аэрохоккей, бильярд, парковка.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="vacancies container" id="vacancies">
+                <div class="decors">
+                        <div class="decor__vacancies">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                     </div>
+                    <div class="decors second">
+                        <div class="decor__vacancies second">
+                            <div class="line"></div>
+                            <div class="circle__stroke"></div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <div class="vacancies__text">
+                        <h2>ждем<br>специалистов</h2>
+                        <ul class="vacancies__list">
+                            <li class="vacancy">
+                                <div class="line"></div>
+                                <p class="text__main">ASP.NET Core WebApi (C#)</p>
+                            </li>
+                            <li class="vacancy">
+                                <div class="line"></div>
+                                <p class="text__main">ReactJS</p>
+                            </li>
+                        </ul>
+                        <button class="type light">Откликнуться</button>
+                    </div>
+                    <div class="vacancies__image"></div>
+                </div>
+            </section>
+            <footer class="footer" id="contacts">
+                <div class="content">
+                    <div class="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CGHyQDPn" width="680" height="600" frameborder="0" allowfullscreen="false"></iframe>
+                    </div>
+                    <div class="footer__info">
+                        <div class="logo__footer"></div>
+                        <address class="contacts">
+                                <div class="row">
+                                    <div class="col__name text__bold">Наш адрес</div>
+                                    <div class="col__value text__main">120000, <br> г. Москва, пр. Серебрякова, д. 14 стр. 23</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col__name text__bold">Телефон</div>
+                                    <div class="col__value text__main">8-800-000-00-00</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col__name text__bold">Мы в социальных сетях</div>
+                                    <div class="col__value socials">
+                                        <a class="icon__social facebook">
+                                            <span class="text__social">Facebook</span>
+                                        </a>
+                                        <a class="icon__social vk">
+                                            <span class="text__social">В контакте</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col__name text__bold">Разработка&nbsp;сайта</div>
+                                    <a class="col__value" href="https://vianmedia.ru/">
+                                        <div class="logo_vian"></div>
+                                    </a>
+                                </div>
+                        </address>
+                        <div class="legal__info">
+                            <p class="text__hint">© ООО “ИнтелКон” Все права защищены 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
