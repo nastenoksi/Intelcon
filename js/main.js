@@ -40,11 +40,34 @@ $(function() {
 	});
 
 
+	  
+
 	$('ul.tabs__caption').on('click', 'li:not(.active)', function(e) {
 		e.preventDefault();
     $(this)
       .addClass('active').siblings().removeClass('active')
       .closest('section.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   });
+
+
+  // Кнопка "наверх"
+
+  var btn = $('.scroll-to-top');
+
+  $(window).scroll(function() {
+	if ($(window).scrollTop() > 200) {
+	  btn.addClass('show');
+	} else {
+	  btn.removeClass('show');
+	}
+  });
+
+  btn.on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, '200');
+  });
+
+
+
 
 });
