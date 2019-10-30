@@ -1269,6 +1269,10 @@ address {
     left: 94px;
 }
 
+button.owl-dot {
+    height: 12px;
+    outline: none;
+
 .owl-dot {
     height: 4px;
     background: #0069B4;
