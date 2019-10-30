@@ -22,40 +22,62 @@
         <symbol id="comfort">
             <path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" d="M 64 32 C 64 49.6731 49.6731 64 32 64 C 14.3269 64 0 49.6731 0 32 C 0 14.3269 14.3269 0 32 0 C 49.6731 0 64 14.3269 64 32 Z M 19.35 22.054 C 19.35 20.1874 20.8632 18.6743 22.7297 18.6743 H 44.3513 C 44.4252 18.6743 44.4979 18.6791 44.5693 18.6885 L 46.3074 18.6895 C 46.5994 18.1089 47.0585 17.6042 47.6634 17.2549 C 49.3136 16.3022 51.4235 16.8676 52.3762 18.5177 C 53.3289 20.1678 52.7636 22.2778 51.1134 23.2305 C 49.4754 24.1762 47.3842 23.626 46.4218 22.0038 L 41.0786 21.975 C 41.0538 21.9752 41.0292 21.975 41.0046 21.9743 H 22.7297 C 22.6857 21.9743 22.65 22.01 22.65 22.054 V 33.2972 C 22.65 35.2168 23.364 36.5283 24.4584 37.3981 C 25.6015 38.3066 27.3146 38.8501 29.446 38.8501 H 35.5 C 37.6337 38.8501 39.4715 38.3049 40.7311 37.3666 C 41.9381 36.4675 42.7013 35.1529 42.7013 33.2972 V 25.9299 C 42.7013 25.0186 43.4401 24.2799 44.3513 24.2799 C 45.2626 24.2799 46.0013 25.0186 46.0013 25.9299 V 33.2972 C 46.0013 36.2181 44.7271 38.5049 42.7026 40.013 C 40.7306 41.482 38.1428 42.1501 35.5 42.1501 H 29.446 C 26.8008 42.1501 24.2909 41.4803 22.4052 39.9815 C 20.4707 38.4441 19.35 36.1542 19.35 33.2972 V 22.054 Z M 24.2297 45.4055 C 23.4013 45.4055 22.7297 46.077 22.7297 46.9055 C 22.7297 47.7339 23.4013 48.4055 24.2297 48.4055 H 41.9865 C 42.8149 48.4055 43.4865 47.7339 43.4865 46.9055 C 43.4865 46.077 42.8149 45.4055 41.9865 45.4055 H 24.2297 Z" />
         </symbol>
+        <symbol id="toogle">
+            <path d="M8 2H24V6H8V2Z"/>
+            <path d="M4 10H24V14H4V10Z"/>
+            <path d="M0 18H24V22H0V18Z"/>
+        </symbol>
+         <symbol id="toogle">
+            <path xmlns="http://www.w3.org/2000/svg" d="M 1 21 L 20.799 1.20099 L 23.6274 4.02942 L 3.82843 23.8284 L 1 21 Z" />
+            <path xmlns="http://www.w3.org/2000/svg" d="M 1 21 L 20.799 1.20099 L 23.6274 4.02942 L 3.82843 23.8284 L 1 21 Z" />
+        </symbol>
     </svg>
     <body>
-        <main class="page">
-            <header class="header">
-                <div class="head">
-                    <div class="head__content">
-                        <div class="logo">
-                            <img src="svg/logo.svg" alt="Logo_Intelcon">
-                        </div>
+        <div  class="page">
+
+        <!-- Header -->
+
+        <header class="header">
+            <div class="head">
+                <div class="head__content">
+                    <div class="logo head__item">
+                    </div>
+                    <div class="call__mob head__item">
+                        <a href="">8-800-000-00-00</a>
+                    </div>
+                    <div class="menu-call  head__item">
+                         <a class="menu-toggle rounded" href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="#toogle"/>
+                        </svg>
+                    </a>
                         <nav class="menu">
-                            <ul class="menu__list">
-                                <li class="menu__item">
-                                    <a class="menu__item__link" href="#about">О компании</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="menu__item__link" href="#projects">Проекты</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="menu__item__link" href="#technologies">Технологии</a>
-                                </li>
-                                 <li class="menu__item">
-                                    <a class="menu__item__link" href="#terms">Условия</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="menu__item__link" href="#contacts">Контакты</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="menu__item__link call" href="">8-800-000-00-00</a>
-                                </li>
-                            </ul>
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a class="menu__item__link" href="#about">О компании</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item__link" href="#projects">Проекты</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item__link" href="#technologies">Технологии</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item__link" href="#terms">Условия</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item__link" href="#contacts">Контакты</a>
+                                    </li>
+                                </ul>
                         </nav>
+                        <div class="call">
+                            <a href="">8-800-000-00-00</a>
+                        </div>
                     </div>
                 </div>
+            </div>
         </header>
+        <main>
             <div class="slider owl-carousel owl-theme works-carousel">
                 <div class="banner2 item">
                     <div class="decors">
@@ -76,7 +98,7 @@
                         <h1>IT-лаборатория</h1>
                         <p class="subhead1">высоких компетенций</p>
                     </div>
-                    <button class="type light">узнать больше</button>
+                    <a href="#vacancies" class="type light">узнать больше</a>
                 </div>
                 <div class="banner item">
                     <div class="decors">
@@ -97,12 +119,14 @@
                         <h1>IT-лаборатория</h1>
                         <p class="subhead1">высоких компетенций</p>
                     </div>
-                    <button class="type dark">узнать больше</button>
+                    <a href="#projects" class="type dark">узнать больше</a>
                 </div>
             </div>
             <section class="about container" id="about">
                 <div class="content">
-                    <div class="about__image"></div>
+                    <div class="about__image">
+                        <img src="img/about_img.png" alt="Aboutcompany" height="600">
+                    </div>
                     <div class="about__text">
                          <div class="decors">
                             <div class="decor__about">
@@ -251,14 +275,15 @@
                                 </div>
                                 <h4>ReactJS</h4>
                             </div>
-                            <div class="technology">
+                            <div class="technology c-plush4">
                                 <div class="logo_technology c-plus">
                                 </div>
                                 <div class="line-circle__animate">
                                     <div class="line"></div>
                                     <div class="circle-animate"></div>
                                 </div>
-                                <h4>++C</h4>
+                                <h4 class="c-plus__desc">++C</h4>
+                                <h4 class="c-plus__mob">C++</h4>
                             </div>
                         </div>
                     </div>
@@ -292,7 +317,7 @@
                                     <use xlink:href="#clock"/>
                                 </svg>
                             </div>
-                            <p class="Text__main">Возможность удаленной работы в перспективе</p>
+                            <p class="text__main">Возможность удаленной работы в перспективе</p>
                         </div>
                     </div>
                     <div class="term__card">
@@ -310,7 +335,7 @@
                                     <use xlink:href="#salary"/>
                                 </svg>
                             </div>
-                            <p class="Text__main">Стабильный высокий оклад с оформлением по ТК РФ. Медицинская страховка</p>
+                            <p class="text__main">Стабильный высокий оклад с оформлением по ТК РФ. Медицинская страховка</p>
                         </div>
                     </div>
                     <div class="term__card">
@@ -328,7 +353,7 @@
                                     <use xlink:href="#edu"/>
                                 </svg>
                             </div>
-                            <p class="Text__main">Мастер-классы, тренинги, выездные семинары.</p>
+                            <p class="text__main">Мастер-классы, тренинги, выездные семинары.</p>
                         </div>
                     </div>
                     <div class="term__card">
@@ -346,7 +371,7 @@
                                     <use xlink:href="#comfort"/>
                                 </svg>
                             </div>
-                            <p class="Text__main">Офис в районе метро "Ботанический сад". Душ, аэрохоккей, бильярд, парковка.</p>
+                            <p class="text__main">Офис в районе метро "Ботанический сад". Душ, аэрохоккей, бильярд, парковка.</p>
                         </div>
                     </div>
                 </div>
@@ -379,14 +404,16 @@
                         </ul>
                         <button class="type light">Откликнуться</button>
                     </div>
-                    <div class="vacancies__image"></div>
+                    <div class="vacancies__image">
+                        <img src="img/vacancies_img.png" alt="yuong people in office" height="600">
+                    </div>
                 </div>
             </section>
         </main>
          <footer class="footer container" id="contacts">
                 <div class="content">
                     <div class="map">
-                        <iframe src="https://yandex.ru/map-widget/v1/-/CGHyQDPn" width="680" height="600" frameborder="0" allowfullscreen="false"></iframe>
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CGHyQDPn" width="100%" height="100%" frameborder="0" allowfullscreen="false"></iframe>
                     </div>
                     <div class="footer__info">
                         <div class="logo__footer"></div>
@@ -423,8 +450,10 @@
                     </div>
                 </div>
         </footer>
+        </div>
 
         <!-- Scroll to Top Button-->
+
         <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
         <i class="fas fa-angle-up"></i>
       </a>
