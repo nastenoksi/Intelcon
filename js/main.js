@@ -69,5 +69,36 @@ $(function() {
 
 
 
+   // Меню-гамбургер
+
+  $('.menu-toggle').click(function (e) {
+    e.preventDefault();
+    $('.menu').toggleClass('show');
+  });
+
+  if (  $(window).width()  <  768) {
+    $('.menu ul li a').click(function(e) {
+      e.preventDefault();
+      $('.menu').toggleClass('show');
+	});
+	
+  }; 
+  
+ 
+ 
+  // Плавная прокрутка
+
+  $("a.menu__item__link").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 400);
+    return false;
+  });
+
+
+
+
 
 });
