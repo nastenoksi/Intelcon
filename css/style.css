@@ -1984,10 +1984,12 @@ button.owl-dot {
   }
   
   .popup__close {
-    color: black;
+      background-image: url(../svg/close.svg);
       position: absolute;
       right: 20px;
       top: 20px;
+      width: 24px;
+      height: 24px;
   }
   
 
