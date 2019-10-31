@@ -2035,6 +2035,10 @@ button.owl-dot {
         display: block;
     }
 
+    .text__desc {
+        display: none;
+    }
+
     .front, .back {
         transition: none;
         transform: none;
