@@ -212,6 +212,7 @@ address {
 
 .banner {
     background-image: url(../img/slider_bg1.png);
+    background-color: #edf7ff;
     width: 1360px;
     height: 600px;
     background-position: center;
@@ -220,7 +221,8 @@ address {
 }
 
 .banner2 {
-    background-color: rgb(4, 58, 97);
+    background-image: url(../img/slider_bg2.png);
+    background-color: #0069B4;
     width: 1360px;
     height: 600px;
     background-position: center;
@@ -233,7 +235,7 @@ address {
 
 .slider__title {
     padding-top: 184px;
-    padding-bottom: 160px;
+    padding-bottom: 120px;
     
 }
 
