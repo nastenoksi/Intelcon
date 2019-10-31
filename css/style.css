@@ -588,8 +588,10 @@ address {
     position: absolute;
     width: 100%;
     height: 100%;
-    will-change: backface-visibility;
+   
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     transition: all 1s ease-out;
 }  
 
