@@ -309,7 +309,7 @@
                                     <use xlink:href="#clock"/>
                                 </svg>
                             </div>
-                            <p class="text__main__bold"><span class="text__desc">Гибкий график</span><span class="text__mob">Гибкий график.<br>Возможность удаленной работы в перспективе</p>
+                            <p class="text__main__bold"><span class="text__desc">Гибкий график</span><span class="text__mob">Гибкий график.<br>Персональное рабочее расписание в удобное вам время</p>
                         </div>
                         <div class="back">
                              <div class="icon">
@@ -317,7 +317,7 @@
                                     <use xlink:href="#clock"/>
                                 </svg>
                             </div>
-                            <p class="text__main">Возможность удаленной работы в перспективе</p>
+                            <p class="text__main">Персональное рабочее расписание в удобное вам время</p>
                         </div>
                     </div>
                     <div class="term__card">
@@ -454,22 +454,28 @@
 
 <div class="popup" id="modal1">
   	<div class="popup__overlay">
-  		<div class="popup__body">
-  			<a href="#" class="popup__close"></a>
-              <h3>Напишите нам!</h3>
-              <form class="modal_form">
-                    <label for="name">Ваше имя:</label>
-                    <input class="modal_input name" type="text" required>
-                    <label for="modal_input">Ваш телефон:</label>
-                    <input class="modal_input phone_number" name="phone" type="tel" required>
-                    <label for="mail">Ваш e-mail</label>
-                    <input class="modal_input mail" type="email" required>
-                    <label for="about_yuorself">Расскажите, пожалуйста, коротко о своих компетенциях.</label>
-                    <textarea class="modal_textarea about_yuorself"></textarea>
-                  <button class="type dark" type="submit" value='Go' onSubmit=window.close>Отправить</button>
-              </form>
-  		</div>
-  	</div>
+      </div>
+      <div class="popup__wrapper">
+      <div class="popup__body">
+            <a href="#" class="popup__close"></a>
+            <h3>Напишите нам!</h3>
+            <form class="modal_form">
+                  <label for="name">Ваше имя:</label>
+                  <input class="modal_input name" type="text" required>
+                  <label for="modal_input">Ваш телефон:</label>
+                  <input class="modal_input phone_number" name="phone" type="tel" required>
+                  <label for="mail">Ваш e-mail</label>
+                  <input class="modal_input mail" type="email" required>
+                  <label for="about_yuorself">Расскажите, пожалуйста, коротко о своих компетенциях.</label>
+                  <textarea class="modal_textarea about_yuorself"></textarea>
+                  <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
+                  <label for="file-3">
+                  <span class="attachment">Загрузить файл</span>
+                  </label>
+                <button class="type dark" type="submit" value='Go' onSubmit=window.close>Отправить</button>
+            </form>
+        </div>
+    </div>
 </div>
 
         <!-- Scroll to Top Button-->
@@ -482,6 +488,8 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/custom-file-input.js"></script>
+        <script src="js/jquery.custom-file-input.js"></script>
         <script src="js/main.js"></script>
         
     </body>
