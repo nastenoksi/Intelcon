@@ -76,7 +76,7 @@ $(function() {
     $('.menu').toggleClass('show');
   });
 
-  if (  $(window).width()  <  768) {
+  if (  $(window).width()  <  1440) {
     $('.menu ul li a').click(function(e) {
       e.preventDefault();
       $('.menu').toggleClass('show');
@@ -97,6 +97,18 @@ $(function() {
     return false;
   });
 
+
+   // Popup-окно
+
+   $('a.type').click(function (e) {
+    e.preventDefault();
+    var destinationPopup = $(this).attr("href");
+    $(destinationPopup).addClass('show');
+    $(destinationPopup + ' .popup__close').click(function  () {
+      $(destinationPopup).removeClass('show');
+    });
+    
+  });
 
 
 
