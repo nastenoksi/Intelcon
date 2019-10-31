@@ -98,7 +98,7 @@
                         <h1>Dream team.<br> Команда мечты.</h1>
                         <p class="subhead1">Присоединяйся!</p>
                     </div>
-                    <a href="#vacancies" class="type light">узнать больше</a>
+                    <a href="#vacancies" class="type light menu__item__link">узнать больше</a>
                 </div>
                 <div class="banner item">
                     <div class="decors">
@@ -119,7 +119,7 @@
                         <h1>IT-лаборатория</h1>
                         <p class="subhead1">высоких компетенций</p>
                     </div>
-                    <a href="#projects" class="type dark">узнать больше</a>
+                    <a href="#projects" class="type dark menu__item__link">узнать больше</a>
                 </div>
             </div>
             <section class="about container" id="about">
@@ -457,12 +457,17 @@
   		<div class="popup__body">
   			<a href="#" class="popup__close"></a>
               <h3>Напишите нам!</h3>
-              <form>
-                    <label for="online_phone">Телефон:</label>
-                    <input class="callback_wrapper" name="phone" type="tel" maxlength="50">
-                  </form>
+              <form class="modal_form">
+                    <label for="name">Ваше имя:</label>
+                    <input class="modal_input name" type="text" required>
+                    <label for="modal_input">Ваш телефон:</label>
+                    <input class="modal_input phone_number" name="phone" type="tel" required>
+                    <label for="mail">Ваш e-mail</label>
+                    <input class="modal_input mail" type="email" required>
+                    <label for="about_yuorself">Расскажите, пожалуйста, коротко о своих компетенциях.</label>
+                    <textarea class="modal_textarea about_yuorself"></textarea>
+                  <button class="type dark" type="submit" value='Go' onSubmit=window.close>Отправить</button>
               </form>
-  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quod, aspernatur. Quia voluptate, perferendis sapiente quis, nihil, dolorem magni corporis ipsum architecto asperiores perspiciatis amet in accusamus blanditiis error sunt.</p>
   		</div>
   	</div>
 </div>
@@ -478,8 +483,6 @@
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
         <script src="js/main.js"></script>
-        <script type="text/javascript">
-    $('.callback_wrapper .form_block input[type=tel]').mask('+7 (999) 999-99-99');
-    </script>
+        
     </body>
 </html>
