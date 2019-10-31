@@ -455,10 +455,13 @@
 <div class="popup" id="modal1">
   	<div class="popup__overlay">
   		<div class="popup__body">
-  			<a href="#" class="popup__close">
-  				
-  			</a>
-  			<h3>Я — модалка!</h3>
+  			<a href="#" class="popup__close"></a>
+              <h3>Напишите нам!</h3>
+              <form>
+                    <label for="online_phone">Телефон:</label>
+                    <input class="callback_wrapper" name="phone" type="tel" maxlength="50">
+                  </form>
+              </form>
   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quod, aspernatur. Quia voluptate, perferendis sapiente quis, nihil, dolorem magni corporis ipsum architecto asperiores perspiciatis amet in accusamus blanditiis error sunt.</p>
   		</div>
   	</div>
@@ -473,6 +476,10 @@
 
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+    $('.callback_wrapper .form_block input[type=tel]').mask('+7 (999) 999-99-99');
+    </script>
     </body>
 </html>
