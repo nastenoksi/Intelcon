@@ -1404,7 +1404,7 @@ button.owl-dot {
           position: relative;
           background-image: url(../svg/element2.svg);
           background-repeat: no-repeat;
-          background-position: center bottom 55px;
+          background-position: top -84px left -34px;
           background-size: 70%;
   }
   
