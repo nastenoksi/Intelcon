@@ -100,15 +100,21 @@ $(function() {
 
    // Popup-окно
 
-   $('a.type').click(function (e) {
-    e.preventDefault();
-    var destinationPopup = $(this).attr("href");
-    $(destinationPopup).addClass('show');
-    $(destinationPopup + ' .popup__close').click(function  () {
-      $(destinationPopup).removeClass('show');
-    });
-    
-  });
+   $('.popup_open').click(function () { 
+	$('.popup').addClass('show');
+	return false;
+});
+
+$('.popup__close').click(function () { 
+	$('.popup').removeClass('show');
+   return false;
+});
+
+$('.popup__overlay').click(function () { 
+	$('.popup').removeClass('show');
+	return false;
+});
+	
 
 
   //Маска телефона
