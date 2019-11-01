@@ -1,6 +1,9 @@
 $(function() {
 	$('.works-carousel').owlCarousel({
-	    loop:true,
+		loop:true,
+		autoplay: true,
+		smartSpeed:1000,
+		autoplayTimeout: 12000,
 	    margin:0,
 	    nav:true,
 	    dots: true,
@@ -19,8 +22,13 @@ $(function() {
 	    }
 	});
 
+
+
 	$('.contributor-carousel').owlCarousel({
-	    loop:true,
+		loop:true,
+		autoplay: true,
+		smartSpeed:1000,
+		autoplayTimeout: 12000,
 	    margin:0,
 	    nav:true,
 	    dots: true,
@@ -38,6 +46,8 @@ $(function() {
 	        }
 	    }
 	});
+
+	
 
 
 	  
