@@ -102,7 +102,7 @@ $(function() {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
     jQuery("html:not(:animated),body:not(:animated)").animate({
-      scrollTop: destination
+      scrollTop: destination - 80
     }, 400);
     return false;
   });
