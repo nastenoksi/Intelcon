@@ -7,7 +7,7 @@ if((isset($_GET['email'])&&$GET['email']!="")){
         }
 
         if (isset($_GET['name'])&&$_GET['name']!="") {
-         $name = '<p>Имя: '.$_POST['name'].'</p>';
+         $name = '<p>Имя: '.$_GET['name'].'</p>';
         }
 
         if (isset($_GET['phone'])&&$_GET['phone']!="") {
