@@ -1,24 +1,24 @@
 <?
-if((isset($_POST['email'])&&$_POST['email']!="")){
+if((isset($_GET['email'])&&$GET['email']!="")){
         $to  = 'simanova_a@mail.ru';
         $subject = 'Присоединиться';
-        if (isset($_POST['about_yuorself'])&&$_POST['about_yuorself']!="") {
-         $about_yuorself = '<p>О себе: '.$_POST['about_yuorself'].'</p>';
+        if (isset($_GET['about_yuorself'])&&$_GET['about_yuorself']!="") {
+         $about_yuorself = '<p>О себе: '.$_GET['about_yuorself'].'</p>';
         }
 
-        if (isset($_POST['name'])&&$_POST['name']!="") {
+        if (isset($_GET['name'])&&$_GET['name']!="") {
          $name = '<p>Имя: '.$_POST['name'].'</p>';
         }
 
-        if (isset($_POST['phone'])&&$_POST['phone']!="") {
-            $phone = '<p>Телефон: '.$_POST['phone'].'</p>';
+        if (isset($_GET['phone'])&&$_GET['phone']!="") {
+            $phone = '<p>Телефон: '.$_GET['phone'].'</p>';
         }
         
         $message = '
                 <html>
                     <body>  
                      ' . $name . '
-                        <p>Email: '.$_POST['email'].'</p>'
+                        <p>Email: '.$_GET['email'].'</p>'
                         . $phone . 
                         . $about_yuorself . '
      </body>
