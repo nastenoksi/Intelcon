@@ -93,6 +93,13 @@ $(function() {
 	});
 	
   }; 
+
+  $('main, footer').click(function (e) { 
+    e.preventDefault();
+    $('.menu').removeClass('show');
+  });
+
+
   
  
  
@@ -102,8 +109,8 @@ $(function() {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
     jQuery("html:not(:animated),body:not(:animated)").animate({
-      scrollTop: destination - 80
-    }, 400);
+      scrollTop: destination -80
+    }, 00);
     return false;
   });
 
@@ -124,6 +131,18 @@ $('.popup__overlay').click(function () {
 	$('.popup').removeClass('show');
 	return false;
 });
+
+$(".modal_form").submit(function() {
+  var th = $(this);
+    $.ajax({ 
+     type: "POST",
+     url: "send.php",
+     data: th.serialize()
+    }).done(function() {
+              $('.popup').removeClass('show');
+    });
+  return false; 
+ });
 	
 
 
