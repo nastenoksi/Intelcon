@@ -135,7 +135,7 @@ $('.popup__overlay').click(function () {
 $(".modal_form").submit(function() {
   var th = $(this);
     $.ajax({ 
-     type: "POST",
+     type: "GET",
      url: "send.php",
      data: th.serialize()
     }).done(function() {
