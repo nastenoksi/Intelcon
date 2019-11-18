@@ -1,6 +1,6 @@
 <?
 if((isset($_POST['email'])&&$_POST['email']!="")){
-        $to = 'свой email';
+        $to  = 'simanova_a@mail.ru';
         $subject = 'Присоединиться';
         if (isset($_POST['about_yuorself'])&&$_POST['about_yuorself']!="") {
          $about_yuorself = '<p>О себе: '.$_POST['about_yuorself'].'</p>';
@@ -27,6 +27,6 @@ if((isset($_POST['email'])&&$_POST['email']!="")){
         "Content-Type: text/html; charset=utf-8" . PHP_EOL .
         'From: Intelcon' . PHP_EOL .
         'Reply-To: Intelcon' . PHP_EOL;
-        mail(simanova_a@mail.ru, $subject, $message, $headers);
+        mail($to, $subject, $message, $headers);
 }
 ?>
